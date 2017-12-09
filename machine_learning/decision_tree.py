@@ -5,6 +5,7 @@ Output: The decision tree maps a real number input to a real number output.
 """
 
 import numpy as np
+import scoring_functions as scoring_functions
 
 class Decision_Tree:
     def __init__(self, depth = 5, min_leaf_size = 5):
@@ -133,6 +134,9 @@ def main():
     print("Test values: " + str(test_cases))
     print("Predictions: " + str(predictions))
     print("Average error: " + str(avg_error))
+    print("Scoring mae: ") + str(scoring_functions.mae(test_cases,predictions))
+    print("Scoring rmse: ") + str(scoring_functions.rmse(test_cases,predictions))
+    
 
             
 if __name__ == '__main__':
