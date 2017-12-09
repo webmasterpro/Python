@@ -136,6 +136,8 @@ def main():
     print("Average error: " + str(avg_error))
     print("Scoring mae: ") + str(scoring_functions.mae(test_cases,predictions))
     print("Scoring rmse: ") + str(scoring_functions.rmse(test_cases,predictions))
+    print("Scoring rmsle: ") + str(scoring_functions.rmsle(test_cases,predictions))
+    print("Scoring mbd: ") + str(scoring_functions.mbd(test_cases,predictions))
     
 
             
